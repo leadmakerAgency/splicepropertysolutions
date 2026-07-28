@@ -13,6 +13,7 @@
     <div class="blog-grid">
       {% for post in pagedPosts %}
       <article class="blog-card" style="animation-delay: {{ loop.index0 * 0.07 }}s">
+        <a class="blog-card-overlay-link" href="{{ post.url }}" aria-label="{{ post.data.title }}"></a>
         {% if post.data.featured_image %}
         <img class="blog-card-img" src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" loading="lazy" />
         {% else %}
@@ -32,7 +33,7 @@
           </div>
           <h2>{{ post.data.title }}</h2>
           <p>{{ post.data.excerpt or post.templateContent | striptags | truncate(140) }}</p>
-          <a class="blog-card-link" href="{{ post.url }}">Read more →</a>
+          <span class="blog-card-link" aria-hidden="true">Read more →</span>
         </div>
       </article>
       {% endfor %}
