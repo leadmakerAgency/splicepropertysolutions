@@ -1,0 +1,17 @@
+module.exports = {
+  url: "https://www.splicepropertysolutions.com",
+  name: "Splice Property Solutions",
+  buildDate: new Date().toISOString().slice(0, 10),
+  blogPageSize: 15,
+  staticPaths: [
+    "/",
+    "/moving/",
+    "/investing/",
+    "/retiring/",
+    "/concierge/",
+    "/events/",
+    "/tiffany/",
+    "/enquire/",
+    "/thank-you/",
+  ],
+};

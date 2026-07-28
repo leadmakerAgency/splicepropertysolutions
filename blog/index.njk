@@ -1,0 +1,86 @@
+{% include "header.njk" %}
+
+<main class="blog-listing-page">
+
+  <div class="blog-hero">
+    <h1>Insights &amp; Guides</h1>
+    <p>Property insights, relocation stories, and expert guides on living, investing, and retiring in Cyprus.</p>
+  </div>
+
+  <div class="blog-wrap">
+
+    {% if pagedPosts and pagedPosts[0] %}
+    <div class="blog-grid">
+      {% for post in pagedPosts %}
+      <article class="blog-card" style="animation-delay: {{ loop.index0 * 0.07 }}s">
+        {% if post.data.featured_image %}
+        <img class="blog-card-img" src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" loading="lazy" />
+        {% else %}
+        <div class="blog-card-img-placeholder">{{ post.data.hero_emoji or "🏡" }}</div>
+        {% endif %}
+
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span>{{ post.date | postDate }}</span>
+            {% if post.data.tags %}
+              {% for tag in post.data.tags %}
+                {% if tag != "posts" %}
+                <span class="tag">{{ tag }}</span>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
+          <h2>{{ post.data.title }}</h2>
+          <p>{{ post.data.excerpt or post.templateContent | striptags | truncate(140) }}</p>
+          <a class="blog-card-link" href="{{ post.url }}">Read more →</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    {# pagination #}
+    {% set totalPosts = collections.posts | length %}
+    {% set totalPages = totalPosts | blogPageCount(site.blogPageSize) %}
+    {% set currentPage = pagination.pageNumber + 1 %}
+
+    {% if totalPages > 1 %}
+    <nav class="pagination" aria-label="Blog pages">
+      {% if pagination.href.previous %}
+      <a class="pag-prev" href="{{ pagination.href.previous }}">← Prev</a>
+      {% endif %}
+
+      {% for n in totalPages | rangeFromOne %}
+        {% if n == currentPage %}
+        <span class="current" aria-current="page">{{ n }}</span>
+        {% elif n == 1 %}
+        <a href="/blog/">{{ n }}</a>
+        {% else %}
+        <a href="/blog/page/{{ n }}/">{{ n }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if pagination.href.next %}
+      <a class="pag-next" href="{{ pagination.href.next }}">Next →</a>
+      {% endif %}
+    </nav>
+    {% endif %}
+
+    {% else %}
+    <div class="blog-empty">
+      <div class="empty-emoji">🌴</div>
+      <h2>No posts yet</h2>
+      <p>Check back soon for guides and stories about Cyprus living.</p>
+    </div>
+    {% endif %}
+
+  </div>
+
+  <div class="blog-cta">
+    <h2>Thinking about Cyprus?</h2>
+    <p>Whether you're moving, investing, or retiring — let's talk.</p>
+    <a class="btn-gold" href="/enquire.html">Book a Free Consultation</a>
+  </div>
+
+</main>
+
+{% include "footer.njk" %}

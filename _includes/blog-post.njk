@@ -1,0 +1,63 @@
+{% include "header.njk" %}
+
+<main class="blog-post-page">
+
+  <div class="post-hero">
+    {% if hero_emoji %}
+    <span class="post-hero-emoji">{{ hero_emoji }}</span>
+    {% endif %}
+
+    {% if tags and tags | length %}
+    <div class="post-tags">
+      {% for tag in tags %}
+        {% if tag != "posts" %}
+        <span class="post-tag">{{ tag }}</span>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <h1>{{ title }}</h1>
+
+    <div class="post-meta">
+      <span>🗓 {{ date | postDate }}</span>
+      <span>⏱ {{ content | readingTime }}</span>
+    </div>
+  </div>
+
+  {% if featured_image %}
+  <img class="post-featured-image" src="{{ featured_image }}" alt="{{ title }}" loading="lazy" />
+  {% endif %}
+
+  <div class="post-wrap">
+    <a class="post-back" href="/blog/">← Back to all posts</a>
+
+    <article class="blog-post-body">
+      {{ content | safe }}
+    </article>
+
+    {% set related = collections.posts | relatedPosts(page.url, tags, 3) %}
+    {% if related and related | length %}
+    <div class="related-posts">
+      <h3>You might also like</h3>
+      <div class="related-grid">
+        {% for post in related %}
+        <a class="related-card" href="{{ post.url }}">
+          <div class="related-card-date">{{ post.date | postDate }}</div>
+          <div class="related-card-title">{{ post.data.title }}</div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="blog-cta">
+    <h2>Ready to make your move to Cyprus?</h2>
+    <p>Talk to Tiffany and the Splice team — we handle everything on the ground.</p>
+    <a class="btn-gold" href="/enquire.html">Book a Consultation</a>
+  </div>
+
+</main>
+
+{% include "footer.njk" %}

@@ -1,0 +1,24 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.name }} Blog</title>
+  <subtitle>Insights, guides and stories about Cyprus property and living.</subtitle>
+  <link href="{{ site.url }}/feed.xml" rel="self" />
+  <link href="{{ site.url }}/blog/" />
+  <updated>{{ site.buildDate }}</updated>
+  <id>{{ site.url }}/</id>
+  {% for post in collections.posts | reverse %}
+  {% if loop.index <= 20 %}
+  <entry>
+    <title>{{ post.data.title | escape }}</title>
+    <link href="{{ site.url }}{{ post.url }}" />
+    <id>{{ site.url }}{{ post.url }}</id>
+    <updated>{{ post.date | atomDate }}</updated>
+    <summary>{{ post.data.excerpt | escape }}</summary>
+  </entry>
+  {% endif %}
+  {% endfor %}
+</feed>

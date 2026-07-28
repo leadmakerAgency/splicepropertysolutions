@@ -1,0 +1,13 @@
+{
+  "name": "splice-property-solutions",
+  "version": "1.0.0",
+  "description": "Splice Property Solutions — Cyprus property experts",
+  "scripts": {
+    "build": "node ./node_modules/@11ty/eleventy/cmd.cjs",
+    "dev": "node ./node_modules/@11ty/eleventy/cmd.cjs --serve"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
