@@ -2,6 +2,7 @@ const { shouldHideInProduction } = require("./lib/post-visibility");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("blog.css");
+  eleventyConfig.addPassthroughCopy("llms.txt");
   eleventyConfig.addPassthroughCopy({ "content/media": "media" });
   eleventyConfig.addPassthroughCopy("admin/");
 

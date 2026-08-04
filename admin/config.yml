@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: OWNER/REPO
+  repo: leadmakerAgency/splicepropertysolutions
   branch: main
 
 media_folder: content/media
