@@ -2,6 +2,7 @@ const { shouldHideInProduction } = require("./lib/post-visibility");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("blog.css");
+  eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("llms.txt");
   eleventyConfig.addPassthroughCopy({ "content/media": "media" });
   eleventyConfig.addPassthroughCopy("admin/");
@@ -9,7 +10,7 @@ module.exports = function (eleventyConfig) {
   const existingPages = [
     "index.html", "moving.html", "investing.html", "retiring.html",
     "concierge.html", "events.html", "tiffany.html", "enquire.html",
-    "thank-you.html",
+    "thank-you.html", "privacy-policy.html", "cookie-policy.html", "terms.html",
   ];
   for (const page of existingPages) {
     eleventyConfig.addPassthroughCopy(page);

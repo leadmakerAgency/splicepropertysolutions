@@ -13,5 +13,8 @@ module.exports = {
     "/tiffany/",
     "/enquire/",
     "/thank-you/",
+    "/privacy-policy/",
+    "/cookie-policy/",
+    "/terms/",
   ],
 };

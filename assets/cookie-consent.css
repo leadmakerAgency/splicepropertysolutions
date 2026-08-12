@@ -1,0 +1,225 @@
+/* Font fallbacks when Google Fonts are not consented to */
+html.fonts-fallback body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html.fonts-fallback h1,
+html.fonts-fallback h2,
+html.fonts-fallback h3,
+html.fonts-fallback h4,
+html.fonts-fallback .brand b,
+html.fonts-fallback .serif-lead {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Cookie consent banner */
+#sps-cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: #0d2237;
+  color: #e8eaee;
+  border-top: 1px solid rgba(201, 162, 75, 0.35);
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.28);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+#sps-cookie-banner[hidden] {
+  display: none !important;
+}
+
+.sps-cookie-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22px 32px 24px;
+}
+
+.sps-cookie-inner h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.sps-cookie-inner p {
+  margin: 0 0 16px;
+  color: #b8c0c9;
+  max-width: 72ch;
+}
+
+.sps-cookie-inner a {
+  color: #e0c07f;
+  text-decoration: underline;
+}
+
+.sps-cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.sps-cookie-btn {
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 11px 20px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.sps-cookie-btn:focus-visible {
+  outline: 2px solid #e0c07f;
+  outline-offset: 2px;
+}
+
+.sps-cookie-btn-accept {
+  background: #c9a24b;
+  color: #0d2237;
+  border-color: #c9a24b;
+}
+
+.sps-cookie-btn-accept:hover {
+  background: #e0c07f;
+  border-color: #e0c07f;
+}
+
+.sps-cookie-btn-reject {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.sps-cookie-btn-reject:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.sps-cookie-btn-settings {
+  background: transparent;
+  color: #e0c07f;
+  border-color: transparent;
+  text-decoration: underline;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.sps-cookie-btn-settings:hover {
+  color: #fff;
+}
+
+/* Preferences panel */
+#sps-cookie-preferences {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+#sps-cookie-preferences[hidden] {
+  display: none !important;
+}
+
+.sps-cookie-category {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sps-cookie-category:last-child {
+  border-bottom: none;
+}
+
+.sps-cookie-category h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 4px;
+}
+
+.sps-cookie-category p {
+  margin: 0;
+  font-size: 13px;
+  color: #9aa5b1;
+}
+
+.sps-cookie-toggle-wrap {
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.sps-cookie-toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sps-cookie-toggle[aria-checked="true"] {
+  background: #c9a24b;
+}
+
+.sps-cookie-toggle[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.sps-cookie-toggle::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.sps-cookie-toggle[aria-checked="true"]::after {
+  transform: translateX(20px);
+}
+
+.sps-cookie-settings-link {
+  font-size: 13px;
+  color: #e0c07f;
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+}
+
+.sps-cookie-settings-link:hover {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .sps-cookie-inner {
+    padding: 18px 20px 20px;
+  }
+
+  .sps-cookie-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sps-cookie-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
