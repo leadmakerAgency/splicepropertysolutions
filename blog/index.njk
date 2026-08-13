@@ -15,7 +15,7 @@
       <article class="blog-card" style="animation-delay: {{ loop.index0 * 0.07 }}s">
         <a class="blog-card-overlay-link" href="{{ post.url }}" aria-label="{{ post.data.title }}"></a>
         {% if post.data.featured_image %}
-        <img class="blog-card-img" src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" loading="lazy" />
+        <img class="blog-card-img" src="{{ post.data.featured_image | mediaUrl }}" alt="{{ post.data.title }}" loading="lazy" />
         {% else %}
         <div class="blog-card-img-placeholder">{{ post.data.hero_emoji or "🏡" }}</div>
         {% endif %}
@@ -32,7 +32,7 @@
             {% endif %}
           </div>
           <h2>{{ post.data.title }}</h2>
-          <p>{{ post.data.excerpt or post.templateContent | striptags | truncate(140) }}</p>
+          <p>{% if post.data.excerpt %}{{ post.data.excerpt | striptags | truncate(140) }}{% else %}{{ post.templateContent | striptags | truncate(140) }}{% endif %}</p>
           <span class="blog-card-link" aria-hidden="true">Read more →</span>
         </div>
       </article>

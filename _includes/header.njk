@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{% if title %}{{ title }} | Splice Property Solutions{% else %}Blog | Splice Property Solutions{% endif %}</title>
-  <meta name="description" content="{% if excerpt %}{{ excerpt }}{% else %}Insights, guides and stories from Splice Property Solutions — your Cyprus property experts.{% endif %}" />
+  <meta name="description" content="{% if excerpt %}{{ excerpt | striptags }}{% else %}Insights, guides and stories from Splice Property Solutions — your Cyprus property experts.{% endif %}" />
   {% if canonical %}<link rel="canonical" href="{{ canonical }}" />{% endif %}
   <!-- OG -->
   <meta property="og:title" content="{% if title %}{{ title }}{% else %}Blog | Splice Property Solutions{% endif %}" />
-  <meta property="og:description" content="{% if excerpt %}{{ excerpt }}{% else %}Insights, guides and stories from Splice Property Solutions.{% endif %}" />
+  <meta property="og:description" content="{% if excerpt %}{{ excerpt | striptags }}{% else %}Insights, guides and stories from Splice Property Solutions.{% endif %}" />
   <meta property="og:type" content="{% if layout == 'blog-post.njk' %}article{% else %}website{% endif %}" />
-  {% if featured_image %}<meta property="og:image" content="{{ site.url }}{{ featured_image }}" />{% endif %}
+  {% if featured_image %}<meta property="og:image" content="{{ site.url }}{{ featured_image | mediaUrl }}" />{% endif %}
   <script src="/assets/cookie-consent-head.js"></script>
   <link rel="stylesheet" href="/assets/cookie-consent.css" />
   <link rel="stylesheet" href="/blog.css" />

@@ -3,13 +3,15 @@ backend:
   repo: leadmakerAgency/splicepropertysolutions
   branch: main
 
-media_folder: content/media
+media_folder: /content/media
 public_folder: /media
 
 collections:
   - name: posts
     label: Blog Posts
     folder: content/posts
+    media_folder: /content/media
+    public_folder: /media
     create: true
     slug: "{{slug}}"
     fields:

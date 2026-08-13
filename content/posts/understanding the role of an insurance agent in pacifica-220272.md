@@ -4,12 +4,11 @@ title: "Understanding the Role of an Insurance Agent in Pacifica"
 slug: "understanding the role of an insurance agent in pacifica"
 date: "2026-08-13T13:33:14.406Z"
 excerpt: "<p>If you're a resident of Pacifica, California, you may have heard the term \"insurance agent\" thrown around when discussing your insurance needs. But what exactly does an insurance agent do and how can they help you? In this article, we'll"
-featured_image: "/content/media/image-understanding-the-role-of-an-insurance-agent-in-pacifica-220272.png"
-hero_emoji: ""
+featured_image: "/media/image-understanding-the-role-of-an-insurance-agent-in-pacifica-220272.png"
+hero_emoji: "🏡"
 tags:
   - "airbnb"
   - "cambridge"
-permalink: "/blog/understanding the role of an insurance agent in pacifica/"
 ---
 
 <p>If you're a resident of Pacifica, California, you may have heard the term "insurance agent" thrown around when discussing your insurance needs. But what exactly does an insurance agent do and how can they help you? In this article, we'll dive into the role of an insurance agent in Pacifica and how they can assist you in finding the right insurance coverage for your specific needs.</p>

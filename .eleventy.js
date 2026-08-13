@@ -1,4 +1,5 @@
 const { shouldHideInProduction } = require("./lib/post-visibility");
+const { normalizeMediaUrl } = require("./lib/media-url");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("blog.css");
@@ -15,6 +16,8 @@ module.exports = function (eleventyConfig) {
   for (const page of existingPages) {
     eleventyConfig.addPassthroughCopy(page);
   }
+
+  eleventyConfig.addFilter("mediaUrl", (url) => normalizeMediaUrl(url));
 
   eleventyConfig.addFilter("rangeFromOne", (end) => {
     const n = Math.max(1, Math.floor(Number(end)));

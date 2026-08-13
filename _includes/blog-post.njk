@@ -26,7 +26,7 @@
   </div>
 
   {% if featured_image %}
-  <img class="post-featured-image" src="{{ featured_image }}" alt="{{ title }}" loading="lazy" />
+  <img class="post-featured-image" src="{{ featured_image | mediaUrl }}" alt="{{ title }}" loading="lazy" />
   {% endif %}
 
   <div class="post-wrap">
