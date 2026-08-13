@@ -29,11 +29,13 @@
     banner.setAttribute("aria-describedby", "sps-cookie-desc");
     banner.innerHTML =
       '<div class="sps-cookie-inner">' +
-      '<h2 id="sps-cookie-title">Cookies on this website</h2>' +
-      '<p id="sps-cookie-desc">We use essential cookies to remember your cookie choices. With your permission, we also load fonts from Google, which may process your IP address. We do not use analytics or marketing cookies unless you enable them. Read our <a href="/cookie-policy.html">Cookie Policy</a> and <a href="/privacy-policy.html">Privacy Policy</a>.</p>' +
-      '<div class="sps-cookie-actions">' +
+      '<h2 id="sps-cookie-title">We use cookies</h2>' +
+      '<p id="sps-cookie-desc">We use essential cookies to remember your choices. With your permission, we also load fonts from Google and use Google Analytics to understand how visitors use the site. <a href="/cookie-policy.html">Cookie Policy</a> · <a href="/privacy-policy.html">Privacy</a></p>' +
+      '<div class="sps-cookie-actions sps-cookie-actions--primary">' +
       '<button type="button" class="sps-cookie-btn sps-cookie-btn-accept" data-action="accept-all">Accept all</button>' +
-      '<button type="button" class="sps-cookie-btn sps-cookie-btn-reject" data-action="reject-all">Reject non-essential</button>' +
+      '<button type="button" class="sps-cookie-btn sps-cookie-btn-reject" data-action="reject-all">Reject</button>' +
+      '</div>' +
+      '<div class="sps-cookie-actions">' +
       '<button type="button" class="sps-cookie-btn sps-cookie-btn-settings" data-action="toggle-prefs">Manage preferences</button>' +
       "</div>" +
       '<div id="sps-cookie-preferences" hidden>' +
@@ -47,7 +49,7 @@
       "</div>" +
       '<div class="sps-cookie-category">' +
       '<div class="sps-cookie-toggle-wrap"><button type="button" class="sps-cookie-toggle" data-key="analytics" aria-checked="false" aria-label="Analytics cookies"></button></div>' +
-      '<div><h3>Analytics</h3><p>Helps us understand how visitors use the site. Not currently in use, but you can set your preference now.</p></div>' +
+      '<div><h3>Analytics</h3><p>Loads Google Analytics to help us understand how visitors use the site. Google may receive your IP address and usage data.</p></div>' +
       "</div>" +
       '<div class="sps-cookie-category">' +
       '<div class="sps-cookie-toggle-wrap"><button type="button" class="sps-cookie-toggle" data-key="marketing" aria-checked="false" aria-label="Marketing cookies"></button></div>' +
@@ -73,6 +75,7 @@
       } else if (action === "toggle-prefs") {
         var panel = document.getElementById("sps-cookie-preferences");
         panel.hidden = !panel.hidden;
+        banner.classList.toggle("sps-cookie-banner--expanded", !panel.hidden);
       } else if (action === "save-prefs") {
         finish(readToggles());
       }
@@ -125,7 +128,10 @@
     var banner = document.getElementById("sps-cookie-banner");
     banner.hidden = false;
     var panel = document.getElementById("sps-cookie-preferences");
-    if (panel) panel.hidden = false;
+    if (panel) {
+      panel.hidden = false;
+      banner.classList.add("sps-cookie-banner--expanded");
+    }
     banner.querySelector("[data-action=accept-all]").focus();
   }
 
