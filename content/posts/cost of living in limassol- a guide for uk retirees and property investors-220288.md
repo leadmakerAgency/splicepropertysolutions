@@ -1,15 +1,15 @@
 ---
-layout: "blog-post.njk"
-title: "Cost of Living in Limassol: A Guide for UK Retirees and Property Investors"
-slug: "cost of living in limassol- a guide for uk retirees and property investors"
-date: "2026-08-15T00:47:06.399Z"
-excerpt: "<p>Welcome to Cyprus, a beautiful Mediterranean island known for its warm weather, stunning beaches, and friendly locals. If you're a UK retiree or property investor considering a move to Cyprus, you may be wondering about the cost of livin"
-featured_image: "/content/media/image-cost-of-living-in-limassol-a-guide-for-uk-retirees-and-property-investors-220288.png"
-hero_emoji: ""
+title: 'Cost of Living in Limassol: A Guide for UK Retirees and Property Investors'
+slug: cost of living in limassol- a guide for uk retirees and property investors
+date: 2026-08-15T00:47:06.399Z
+excerpt: <p>Welcome to Cyprus, a beautiful Mediterranean island known for its warm weather, stunning beaches, and friendly locals. If you're a UK retiree or property investor considering a move to Cyprus, you may be wondering about the cost of livin
+featured_image: /content/media/image-cost-of-living-in-limassol-a-guide-for-uk-retirees-and-property-investors-220288.png
+hero_emoji: ''
 tags:
-  - "airbnb"
-  - "cambridge"
-permalink: "/blog/cost of living in limassol- a guide for uk retirees and property investors/"
+  - Cyprus
+  - Cost of Living
+layout: blog-post.njk
+permalink: /blog/cost of living in limassol- a guide for uk retirees and property investors/
 ---
 
 <p>Welcome to Cyprus, a beautiful Mediterranean island known for its warm weather, stunning beaches, and friendly locals. If you're a UK retiree or property investor considering a move to Cyprus, you may be wondering about the cost of living in Limassol, one of the island's most popular cities. In this guide, we'll break down everything you need to know about the cost of living in Limassol and how it compares to the UK.</p>
@@ -35,6 +35,3 @@ permalink: "/blog/cost of living in limassol- a guide for uk retirees and proper
 <p><em>This article is for general informational purposes only and does not constitute property, financial, legal, or tax advice. Details, costs and availability vary, are subject to individual circumstances, and change over time. Nothing here is a guarantee. Please speak to a suitably qualified professional about your situation.</em></p>
 <p><em>Any references to tax treatment are general in nature. Tax laws change and apply differently to each person. Please consult a qualified tax professional.</em></p>
 <p><em>This is general information, not financial or investment advice. Property values and rental income can fall as well as rise. Please consult a suitably qualified adviser about your circumstances.</em></p>
-
-
-
