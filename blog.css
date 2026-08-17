@@ -379,17 +379,41 @@ html, body { margin: 0; padding: 0; }
 
 .post-meta span { display: inline-flex; align-items: center; gap: 5px; }
 
-.post-featured-image {
-  max-height: 480px;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .post-wrap {
   max-width: 800px;
   margin: 0 auto;
   padding: 56px 24px 80px;
+}
+
+.post-wrap--has-image {
+  padding-top: 0;
+}
+
+.post-featured-figure {
+  margin: -48px auto 40px;
+  max-width: 680px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--sand-2);
+  box-shadow: 0 12px 40px rgba(13, 34, 55, 0.12);
+  background: var(--sand);
+}
+
+.post-featured-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .post-featured-figure {
+    margin: -32px auto 28px;
+    max-width: 100%;
+  }
+
+  .post-hero {
+    padding-bottom: 40px;
+  }
 }
 
 /* prose */

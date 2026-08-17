@@ -25,11 +25,13 @@
     </div>
   </div>
 
-  {% if featured_image %}
-  <img class="post-featured-image" src="{{ featured_image | mediaUrl }}" alt="{{ title }}" loading="lazy" />
-  {% endif %}
+  <div class="post-wrap{% if featured_image %} post-wrap--has-image{% endif %}">
+    {% if featured_image %}
+    <figure class="post-featured-figure">
+      <img class="post-featured-image" src="{{ featured_image | mediaUrl }}" alt="{{ title }}" loading="eager" />
+    </figure>
+    {% endif %}
 
-  <div class="post-wrap">
     <a class="post-back" href="/blog/">← Back to all posts</a>
 
     <article class="blog-post-body">
