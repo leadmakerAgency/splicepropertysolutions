@@ -4,7 +4,7 @@ slug: ''
 date: 2026-07-16
 draft: true
 excerpt: Everything You Need to Know About Creating a New Life in the Mediterranean
-featured_image: ''
+featured_image: /media/ChatGPT Image Aug 18, 2026, 10_47_52 AM.png
 hero_emoji: 🏡
 tags: []
 ---
