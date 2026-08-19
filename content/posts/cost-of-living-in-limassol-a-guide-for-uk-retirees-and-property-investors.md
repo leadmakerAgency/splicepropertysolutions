@@ -1,7 +1,8 @@
 ---
 title: 'Cost of Living in Limassol: A Guide for UK Retirees and Property Investors'
-slug: cost of living in limassol- a guide for uk retirees and property investors
-date: 2026-08-15T00:47:06.399Z
+slug: cost-of-living-in-limassol-a-guide-for-uk-retirees-and-property-investors
+date: 2026-08-15
+draft: false
 excerpt: <p>Welcome to Cyprus, a beautiful Mediterranean island known for its warm weather, stunning beaches, and friendly locals. If you're a UK retiree or property investor considering a move to Cyprus, you may be wondering about the cost of livin
 featured_image: /content/media/image-cost-of-living-in-limassol-a-guide-for-uk-retirees-and-property-investors-220288.png
 hero_emoji: ''
@@ -9,7 +10,6 @@ tags:
   - Cyprus
   - Cost of Living
 layout: blog-post.njk
-permalink: /blog/cost of living in limassol- a guide for uk retirees and property investors/
 ---
 
 <p>Welcome to Cyprus, a beautiful Mediterranean island known for its warm weather, stunning beaches, and friendly locals. If you're a UK retiree or property investor considering a move to Cyprus, you may be wondering about the cost of living in Limassol, one of the island's most popular cities. In this guide, we'll break down everything you need to know about the cost of living in Limassol and how it compares to the UK.</p>

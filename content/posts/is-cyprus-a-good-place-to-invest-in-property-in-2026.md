@@ -1,8 +1,8 @@
 ---
 title: Is Cyprus a Good Place to Invest in Property in 2026?
-slug: ''
+slug: is-cyprus-a-good-place-to-invest-in-property-in-2026
 date: 2026-08-12
-draft: true
+draft: false
 excerpt: ''
 featured_image: /media/ChatGPT Image Aug 18, 2026, 05_52_35 PM.png
 hero_emoji: 🏡

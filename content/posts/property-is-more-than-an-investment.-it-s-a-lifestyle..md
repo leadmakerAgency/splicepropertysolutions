@@ -1,8 +1,8 @@
 ---
 title: Property Is More Than an Investment. It's a Lifestyle.
-slug: ''
+slug: three-mistakes-overseas-buyers-make-in-cyprus
 date: 2026-07-16
-draft: true
+draft: false
 excerpt: Three Mistakes Overseas Buyers Make in Cyprus and 7 Mistakes First-Time Overseas Property Buyers Make
 featured_image: /media/ChatGPT Image Aug 18, 2026, 11_00_50 AM.png
 hero_emoji: 🏡

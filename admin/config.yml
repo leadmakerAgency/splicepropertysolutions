@@ -17,8 +17,8 @@ collections:
     fields:
       - { label: Title,          name: title,          widget: string }
       - { label: Slug,           name: slug,           widget: string, required: false, hint: "Leave blank to auto-generate from title" }
-      - { label: Publish Date,   name: date,           widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
-      - { label: Draft,          name: draft,          widget: boolean, default: true, required: false }
+      - { label: Publish Date,   name: date,           widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, hint: "Posts dated today or earlier publish automatically. Future dates stay hidden until that day." }
+      - { label: Draft,          name: draft,          widget: boolean, default: false, required: false, hint: "Automatically set when saving. Only future-dated posts stay as drafts." }
       - { label: Excerpt,        name: excerpt,        widget: text,    required: false }
       - { label: Featured Image, name: featured_image, widget: image,   required: false }
       - { label: Hero Emoji,     name: hero_emoji,     widget: string,  required: false, default: "🏡" }

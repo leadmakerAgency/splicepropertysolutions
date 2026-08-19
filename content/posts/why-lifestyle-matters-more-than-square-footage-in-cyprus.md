@@ -1,8 +1,8 @@
 ---
 title: Why Lifestyle Matters More Than Square Footage in Cyprus
-slug: ''
+slug: why-lifestyle-matters-more-than-square-footage-in-cyprus
 date: 2026-07-16
-draft: true
+draft: false
 excerpt: Selling a way of life, not just a property
 featured_image: /media/ChatGPT Image Aug 18, 2026, 05_23_51 PM.png
 hero_emoji: 🏡

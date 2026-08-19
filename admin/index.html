@@ -5,6 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager – Splice Property Solutions</title>
   <script src="https://unpkg.com/@sveltia/cms@0.140.2/dist/sveltia-cms.js" defer></script>
+  <script defer>
+    const startOfUtcDay = (value) => {
+      if (!value) return null;
+      const date = value instanceof Date ? value : new Date(value);
+      if (Number.isNaN(date.getTime())) return null;
+      return Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
+    };
+
+    const shouldPublishNow = (dateValue) => {
+      const publishDay = startOfUtcDay(dateValue);
+      const today = startOfUtcDay(new Date());
+      if (publishDay === null || today === null) return true;
+      return publishDay <= today;
+    };
+
+    window.addEventListener("load", () => {
+      CMS.registerEventListener({
+        name: "preSave",
+        handler: ({ entry }) => {
+          const data = entry.get("data");
+          const dateValue = data.get("date");
+          const publishNow = shouldPublishNow(dateValue);
+          return data.set("draft", !publishNow);
+        },
+      });
+    });
+  </script>
 </head>
 <body></body>
 </html>

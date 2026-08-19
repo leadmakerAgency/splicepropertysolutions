@@ -1,8 +1,8 @@
 ---
 title: Property Is More Than an Investment. It's a Lifestyle!
-slug: ''
+slug: property-is-more-than-an-investment-its-a-lifestyle
 date: 2026-07-30
-draft: true
+draft: false
 excerpt: ''
 featured_image: /media/ChatGPT Image Aug 18, 2026, 05_43_43 PM.png
 hero_emoji: 🏡

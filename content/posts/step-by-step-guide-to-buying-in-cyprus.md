@@ -1,8 +1,8 @@
 ---
 title: Step by Step Guide to Buying in Cyprus
-slug: ''
+slug: step-by-step-guide-to-buying-in-cyprus
 date: 2026-07-16
-draft: true
+draft: false
 excerpt: 'Investing in Cyprus Property: A Strategic Guide for International Investors (2026)'
 featured_image: /media/ChatGPT Image Aug 18, 2026, 05_28_43 PM.png
 hero_emoji: 🏡
