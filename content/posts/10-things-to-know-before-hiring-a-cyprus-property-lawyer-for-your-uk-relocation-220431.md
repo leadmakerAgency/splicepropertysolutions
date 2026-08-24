@@ -1,15 +1,13 @@
 ---
-layout: "blog-post.njk"
-title: "10 Things to Know Before Hiring a Cyprus Property Lawyer for Your UK Relocation"
-slug: "10-things-to-know-before-hiring-a-cyprus-property-lawyer-for-your-uk-relocation"
-date: "2026-08-24T18:00:30.761Z"
-excerpt: "<p>Are you considering making a move to Cyprus? With its stunning beaches, delicious cuisine, and warm climate, it's no wonder that many UK residents are drawn to this beautiful Mediterranean island. However, before you start packing your b"
-featured_image: "/content/media/image-10-things-to-know-before-hiring-a-cyprus-property-lawyer-for-your-uk-relocation-220431.png"
-hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
-permalink: "/blog/10-things-to-know-before-hiring-a-cyprus-property-lawyer-for-your-uk-relocation/"
+title: 10 Things to Know Before Hiring a Cyprus Property Lawyer for Your UK Relocation
+slug: 10-things-to-know-before-hiring-a-cyprus-property-lawyer-for-your-uk-relocation
+date: 2026-08-24T18:00:30.761Z
+draft: false
+excerpt: <p>Are you considering making a move to Cyprus? With its stunning beaches, delicious cuisine, and warm climate, it's no wonder that many UK residents are drawn to this beautiful Mediterranean island. However, before you start packing your b
+featured_image: /content/media/image-10-things-to-know-before-hiring-a-cyprus-property-lawyer-for-your-uk-relocation-220431.png
+hero_emoji: ''
+layout: blog-post.njk
+permalink: /blog/10-things-to-know-before-hiring-a-cyprus-property-lawyer-for-your-uk-relocation/
 ---
 
 <p>Are you considering making a move to Cyprus? With its stunning beaches, delicious cuisine, and warm climate, it's no wonder that many UK residents are drawn to this beautiful Mediterranean island. However, before you start packing your bags, there are a few important things you should know, specifically when it comes to hiring a Cyprus property lawyer. In this article, we'll cover everything you need to know about finding the right lawyer for your UK relocation, so you can start your new life in Cyprus with confidence.</p>
@@ -49,6 +47,3 @@ permalink: "/blog/10-things-to-know-before-hiring-a-cyprus-property-lawyer-for-y
 <p><em>This article is for general informational purposes only and does not constitute property, financial, legal, or tax advice. Details, costs, and availability vary, are subject to individual circumstances, and change over time. Nothing here is a guarantee. Please speak to a suitably qualified professional about your situation.</em></p>
 <p><em>Any references to tax treatment are general in nature. Tax laws change and apply differently to each person. Please consult a qualified tax professional.</em></p>
 <p><em>This is general information, not financial or investment advice. Property values and rental income can fall as well as rise. Please consult a suitably qualified adviser about your circumstances.</em></p>
-
-
-
