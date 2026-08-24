@@ -23,13 +23,6 @@
         <div class="blog-card-body">
           <div class="blog-card-meta">
             <span>{{ post.date | postDate }}</span>
-            {% if post.data.tags %}
-              {% for tag in post.data.tags %}
-                {% if tag != "posts" %}
-                <span class="tag">{{ tag }}</span>
-                {% endif %}
-              {% endfor %}
-            {% endif %}
           </div>
           <h2>{{ post.data.title }}</h2>
           <p>{% if post.data.excerpt %}{{ post.data.excerpt | striptags | truncate(140) }}{% else %}{{ post.templateContent | striptags | truncate(140) }}{% endif %}</p>
