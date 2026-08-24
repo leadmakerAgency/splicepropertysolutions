@@ -6,9 +6,6 @@ draft: false
 excerpt: <p>Welcome to Cyprus, a beautiful Mediterranean island known for its warm weather, stunning beaches, and friendly locals. If you're a UK retiree or property investor considering a move to Cyprus, you may be wondering about the cost of livin
 featured_image: /content/media/image-cost-of-living-in-limassol-a-guide-for-uk-retirees-and-property-investors-220288.png
 hero_emoji: ''
-tags:
-  - Cyprus
-  - Cost of Living
 layout: blog-post.njk
 ---
 
