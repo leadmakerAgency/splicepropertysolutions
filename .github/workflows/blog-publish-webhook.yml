@@ -1,0 +1,47 @@
+name: Blog publish webhook
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/posts/**"
+
+permissions:
+  contents: read
+  deployments: read
+  statuses: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - run: npm ci
+
+      - name: Detect new published posts
+        id: detect
+        run: node scripts/detect-new-blog-posts.js
+        env:
+          SITE_URL: https://www.splicepropertysolutions.co.uk
+
+      - name: Wait for Vercel production deploy
+        if: steps.detect.outputs.has_posts == 'true'
+        uses: vercel/wait-for-deployment-action@v1
+        with:
+          environment: Production
+          timeout: 600
+
+      - name: Notify Leadmaker
+        if: steps.detect.outputs.has_posts == 'true'
+        run: node scripts/send-blog-webhook.js
+        env:
+          LEADMAKER_BLOG_WEBHOOK_URL: ${{ secrets.LEADMAKER_BLOG_WEBHOOK_URL }}
+          POSTS_FILE: ${{ steps.detect.outputs.posts_file }}
+          COMMIT_SHA: ${{ github.sha }}

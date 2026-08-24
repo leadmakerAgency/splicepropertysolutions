@@ -2,6 +2,7 @@ const { shouldHideInProduction } = require("./lib/post-visibility");
 const { normalizeMediaUrl } = require("./lib/media-url");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.ignores.add("**/.github/**");
   eleventyConfig.addPassthroughCopy("blog.css");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("llms.txt");

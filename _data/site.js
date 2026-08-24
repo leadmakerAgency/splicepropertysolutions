@@ -1,5 +1,5 @@
 module.exports = {
-  url: "https://www.splicepropertysolutions.com",
+  url: "https://www.splicepropertysolutions.co.uk",
   name: "Splice Property Solutions",
   buildDate: new Date().toISOString().slice(0, 10),
   blogPageSize: 15,
