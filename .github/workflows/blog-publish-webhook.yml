@@ -33,10 +33,13 @@ jobs:
 
       - name: Wait for Vercel production deploy
         if: steps.detect.outputs.has_posts == 'true'
-        uses: vercel/wait-for-deployment-action@v1
-        with:
-          environment: Production
-          timeout: 600
+        run: node scripts/wait-for-vercel-deployment.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMIT_SHA: ${{ github.sha }}
+          DEPLOY_ENVIRONMENT: Production
+          DEPLOY_WAIT_TIMEOUT_MS: 600000
+          DEPLOY_WAIT_POLL_INTERVAL_MS: 10000
 
       - name: Notify Leadmaker
         if: steps.detect.outputs.has_posts == 'true'
