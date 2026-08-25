@@ -1,15 +1,13 @@
 ---
-layout: "blog-post.njk"
-title: "Retiring to Cyprus on a Budget: Tips for Affordable Property Investment and Relocation"
-slug: "retiring to cyprus on a budget- tips for affordable property investment and relocation"
-date: "2026-08-24T16:00:47.270Z"
-excerpt: "<p>Are you considering retiring to Cyprus on a budget? With its beautiful beaches, warm climate and affordable living costs, it's no surprise that many people from the UK are choosing to relocate or invest in this Mediterranean island. Howe"
-featured_image: "/content/media/image-retiring-to-cyprus-on-a-budget-tips-for-affordable-property-investment-and-relocation-220405.png"
-hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
-permalink: "/blog/retiring to cyprus on a budget- tips for affordable property investment and relocation/"
+title: 'Retiring to Cyprus on a Budget: Tips for Affordable Property Investment and Relocation'
+slug: retiring to cyprus on a budget- tips for affordable property investment and relocation
+date: 2026-08-24T16:00:47.270Z
+draft: false
+excerpt: <p>Are you considering retiring to Cyprus on a budget? With its beautiful beaches, warm climate and affordable living costs, it's no surprise that many people from the UK are choosing to relocate or invest in this Mediterranean island. Howe
+featured_image: /content/media/image-retiring-to-cyprus-on-a-budget-tips-for-affordable-property-investment-and-relocation-220405.png
+hero_emoji: ''
+layout: blog-post.njk
+permalink: /blog/retiring to cyprus on a budget- tips for affordable property investment and relocation/
 ---
 
 <p>Are you considering retiring to Cyprus on a budget? With its beautiful beaches, warm climate and affordable living costs, it's no surprise that many people from the UK are choosing to relocate or invest in this Mediterranean island. However, navigating the property market and relocation process can be daunting, especially if you are researching from abroad. But don't worry, we're here to help. In this article, we'll share some tips for making your dream of retiring to Cyprus a reality without breaking the bank.</p>
@@ -47,6 +45,3 @@ permalink: "/blog/retiring to cyprus on a budget- tips for affordable property i
 <p><em>This article is for general informational purposes only and does not constitute property, financial, legal, or tax advice. Details, costs and availability vary, are subject to individual circumstances, and change over time. Nothing here is a guarantee. Please speak to a suitably qualified professional about your situation.</em></p>
 <p><em>Any references to tax treatment are general in nature. Tax laws change and apply differently to each person. Please consult a qualified tax professional.</em></p>
 <p><em>This is general information, not financial or investment advice. Property values and rental income can fall as well as rise. Please consult a suitably qualified adviser about your circumstances.</em></p>
-
-
-
