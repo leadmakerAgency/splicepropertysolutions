@@ -1,15 +1,13 @@
 ---
-layout: "blog-post.njk"
-title: "Retiring Abroad in Cyprus: A Comprehensive Guide for UK Residents"
-slug: "retiring-abroad-in-cyprus-a-comprehensive-guide-for-uk-residents"
-date: "2026-08-24T20:01:57.619Z"
-excerpt: "<p>Are you considering retiring abroad in Cyprus? With its stunning landscapes, warm climate, and welcoming culture, it's no surprise that many UK residents are choosing to make the move to this Mediterranean island. But before you make the"
-featured_image: "/content/media/image-retiring-abroad-in-cyprus-a-comprehensive-guide-for-uk-residents-220434.png"
-hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
-permalink: "/blog/retiring-abroad-in-cyprus-a-comprehensive-guide-for-uk-residents/"
+title: 'Retiring Abroad in Cyprus: A Comprehensive Guide for UK Residents'
+slug: retiring-abroad-in-cyprus-a-comprehensive-guide-for-uk-residents
+date: 2026-08-24T20:01:57.619Z
+draft: false
+excerpt: <p>Are you considering retiring abroad in Cyprus? With its stunning landscapes, warm climate, and welcoming culture, it's no surprise that many UK residents are choosing to make the move to this Mediterranean island. But before you make the
+featured_image: /content/media/image-retiring-abroad-in-cyprus-a-comprehensive-guide-for-uk-residents-220434.png
+hero_emoji: ''
+layout: blog-post.njk
+permalink: /blog/retiring-abroad-in-cyprus-a-comprehensive-guide-for-uk-residents/
 ---
 
 <p>Are you considering retiring abroad in Cyprus? With its stunning landscapes, warm climate, and welcoming culture, it's no surprise that many UK residents are choosing to make the move to this Mediterranean island. But before you make the leap, it's important to understand the ins and outs of retiring in Cyprus. In this comprehensive guide, we'll cover everything you need to know about retiring abroad in Cyprus, from the top locations to the cost of living and the process of obtaining residency. So, let's dive in and discover your new home in the sun.</p>
@@ -48,6 +46,3 @@ permalink: "/blog/retiring-abroad-in-cyprus-a-comprehensive-guide-for-uk-residen
 <p><em>This article is for general informational purposes only and does not constitute property, financial, legal, or tax advice. Details, costs and availability vary, are subject to individual circumstances, and change over time. Nothing here is a guarantee. Please speak to a suitably qualified professional about your situation.</em></p>
 <p><em>Any references to tax treatment are general in nature. Tax laws change and apply differently to each person. Please consult a qualified tax professional.</em></p>
 <p><em>This is general information, not financial or investment advice. Property values and rental income can fall as well as rise. Please consult a suitably qualified adviser about your circumstances.</em></p>
-
-
-
