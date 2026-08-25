@@ -1,12 +1,13 @@
 ---
-layout: "blog-post.njk"
-title: "Protecting Your Investment: How to Avoid Cyprus Property Scams"
-slug: "protecting your investment- how to avoid cyprus property scams"
-date: "2026-08-24T15:36:59.121Z"
-excerpt: "<p>If you're considering moving to Cyprus or investing in property there, you may have heard about the potential risks of property scams. It's important to protect your investment and avoid falling victim to these scams. In this article, we"
-featured_image: "/content/media/image-protecting-your-investment-how-to-avoid-cyprus-property-scams-220400.png"
-hero_emoji: ""
-permalink: "/blog/protecting your investment- how to avoid cyprus property scams/"
+title: 'Protecting Your Investment: How to Avoid Cyprus Property Scams'
+slug: protecting your investment- how to avoid cyprus property scams
+date: 2026-08-24T15:36:59.121Z
+draft: false
+excerpt: <p>If you're considering moving to Cyprus or investing in property there, you may have heard about the potential risks of property scams. It's important to protect your investment and avoid falling victim to these scams. In this article, we
+featured_image: /content/media/image-protecting-your-investment-how-to-avoid-cyprus-property-scams-220400.png
+hero_emoji: ''
+layout: blog-post.njk
+permalink: /blog/protecting your investment- how to avoid cyprus property scams/
 ---
 
 <p>If you're considering moving to Cyprus or investing in property there, you may have heard about the potential risks of property scams. It's important to protect your investment and avoid falling victim to these scams. In this article, we'll discuss how you can protect yourself from Cyprus property scams.</p>
@@ -44,6 +45,3 @@ permalink: "/blog/protecting your investment- how to avoid cyprus property scams
 <p><em>This article is for general informational purposes only and does not constitute property, financial, legal, or tax advice. Details, costs and availability vary, are subject to individual circumstances, and change over time. Nothing here is a guarantee. Please speak to a suitably qualified professional about your situation.</em></p>
 <p><em>Any references to tax treatment are general in nature. Tax laws change and apply differently to each person. Please consult a qualified tax professional.</em></p>
 <p><em>This is general information, not financial or investment advice. Property values and rental income can fall as well as rise. Please consult a suitably qualified adviser about your circumstances.</em></p>
-
-
-
