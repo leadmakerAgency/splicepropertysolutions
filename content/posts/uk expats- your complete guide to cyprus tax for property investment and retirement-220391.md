@@ -1,15 +1,13 @@
 ---
-layout: "blog-post.njk"
-title: "UK Expats: Your Complete Guide to Cyprus Tax for Property Investment and Retirement"
-slug: "uk expats- your complete guide to cyprus tax for property investment and retirement"
-date: "2026-08-24T14:57:39.783Z"
-excerpt: "<p>Welcome to Cyprus, UK expats! Whether you're considering moving, investing, or retiring here, you've made a great choice. Cyprus offers a warm climate, beautiful landscapes, and a relaxed lifestyle. But before you make the move, it's imp"
-featured_image: "/content/media/image-uk-expats-your-complete-guide-to-cyprus-tax-for-property-investment-and-retirement-220391.png"
-hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
-permalink: "/blog/uk expats- your complete guide to cyprus tax for property investment and retirement/"
+title: 'UK Expats: Your Complete Guide to Cyprus Tax for Property Investment and Retirement'
+slug: uk expats- your complete guide to cyprus tax for property investment and retirement
+date: 2026-08-24T14:57:39.783Z
+draft: false
+excerpt: <p>Welcome to Cyprus, UK expats! Whether you're considering moving, investing, or retiring here, you've made a great choice. Cyprus offers a warm climate, beautiful landscapes, and a relaxed lifestyle. But before you make the move, it's imp
+featured_image: /content/media/image-uk-expats-your-complete-guide-to-cyprus-tax-for-property-investment-and-retirement-220391.png
+hero_emoji: ''
+layout: blog-post.njk
+permalink: /blog/uk expats- your complete guide to cyprus tax for property investment and retirement/
 ---
 
 <p>Welcome to Cyprus, UK expats! Whether you're considering moving, investing, or retiring here, you've made a great choice. Cyprus offers a warm climate, beautiful landscapes, and a relaxed lifestyle. But before you make the move, it's important to understand the tax implications for UK expats in Cyprus. In this guide, we'll break down everything you need to know about Cyprus tax for property investment and retirement. From the types of taxes you may encounter to the specific rules and regulations, we've got you covered. So, let's dive in and get you ready for your new life in Cyprus.</p>
@@ -78,6 +76,3 @@ permalink: "/blog/uk expats- your complete guide to cyprus tax for property inve
 <p><em>Any references to tax treatment are general in nature. Tax laws change and apply differently to each person. Please consult a qualified tax professional.</em></p>
 
 <p><em>This is general information, not financial or investment advice. Property values and rental income can fall as well as rise. Please consult a suitably qualified adviser about your circumstances.</em></p>
-
-
-
