@@ -6,9 +6,6 @@ date: "2026-08-24T16:00:47.270Z"
 excerpt: "<p>Are you considering retiring to Cyprus on a budget? With its beautiful beaches, warm climate and affordable living costs, it's no surprise that many people from the UK are choosing to relocate or invest in this Mediterranean island. Howe"
 featured_image: "/content/media/image-retiring-to-cyprus-on-a-budget-tips-for-affordable-property-investment-and-relocation-220405.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/retiring to cyprus on a budget- tips for affordable property investment and relocation/"
 ---
 

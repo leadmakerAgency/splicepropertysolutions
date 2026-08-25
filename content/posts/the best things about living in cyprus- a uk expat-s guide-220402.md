@@ -6,9 +6,6 @@ date: "2026-08-24T15:54:50.221Z"
 excerpt: "<p>Welcome to the beautiful island of Cyprus! As a UK expat who has made the move to this Mediterranean gem, I am excited to share with you the best things about living in Cyprus. Whether you are considering moving, investing, or retiring h"
 featured_image: "/content/media/image-the-best-things-about-living-in-cyprus-a-uk-expats-guide-220402.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/the best things about living in cyprus- a uk expat-s guide/"
 ---
 

@@ -62,18 +62,9 @@ module.exports = function (eleventyConfig) {
     return `${minutes} min read`;
   });
 
-  eleventyConfig.addFilter("relatedPosts", (posts, currentUrl, currentTags, limit) => {
-    limit = limit || 3;
-    const tags = (currentTags || []).map((t) => t.toLowerCase());
-    const candidates = posts.filter((p) => p.url !== currentUrl);
-    if (tags.length === 0) return candidates.slice(0, limit);
-    const scored = candidates.map((p) => {
-      const pTags = (p.data.tags || []).map((t) => t.toLowerCase());
-      const overlap = tags.filter((t) => pTags.includes(t)).length;
-      return { post: p, score: overlap };
-    });
-    scored.sort((a, b) => b.score - a.score);
-    return scored.slice(0, limit).map((s) => s.post);
+  eleventyConfig.addFilter("relatedPosts", (posts, currentUrl, limit) => {
+    const max = limit || 3;
+    return posts.filter((post) => post.url !== currentUrl).slice(0, max);
   });
 
   eleventyConfig.addCollection("posts", (collectionApi) =>

@@ -6,9 +6,6 @@ date: "2026-08-24T14:57:39.783Z"
 excerpt: "<p>Welcome to Cyprus, UK expats! Whether you're considering moving, investing, or retiring here, you've made a great choice. Cyprus offers a warm climate, beautiful landscapes, and a relaxed lifestyle. But before you make the move, it's imp"
 featured_image: "/content/media/image-uk-expats-your-complete-guide-to-cyprus-tax-for-property-investment-and-retirement-220391.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/uk expats- your complete guide to cyprus tax for property investment and retirement/"
 ---
 

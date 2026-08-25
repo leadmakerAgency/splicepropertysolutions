@@ -6,9 +6,6 @@ date: "2026-08-24T16:09:08.135Z"
 excerpt: "<p>Are you considering a move or investment in Cyprus? The beautiful Mediterranean island has become an increasingly popular destination for retirees, investors, and those looking for a change of scenery. One important aspect to consider wh"
 featured_image: "/content/media/image-maximising-your-investment-with-cyprus-non-dom-status-220409.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/maximising your investment with cyprus non-dom status/"
 ---
 

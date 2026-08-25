@@ -6,9 +6,6 @@ date: "2026-08-24T15:36:59.121Z"
 excerpt: "<p>If you're considering moving to Cyprus or investing in property there, you may have heard about the potential risks of property scams. It's important to protect your investment and avoid falling victim to these scams. In this article, we"
 featured_image: "/content/media/image-protecting-your-investment-how-to-avoid-cyprus-property-scams-220400.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/protecting your investment- how to avoid cyprus property scams/"
 ---
 

@@ -1,0 +1,382 @@
+{
+  "name": "Article Generator - Splice Webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "80766f79-2d03-4502-be81-e6314661d99e",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [2400, 0],
+      "id": "2205a37b-8414-4059-a39d-c04a4c9379a9",
+      "name": "Webhook",
+      "webhookId": "80766f79-2d03-4502-be81-e6314661d99e",
+      "notesInFlow": true,
+      "notes": "Response is now sent by the 'Respond to Zapier' node, so Zapier gets THIS post's URL immediately."
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Webhook').first().json.body.featured_image }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [2624, 0],
+      "id": "6e81ff85-8fce-45d5-b3ef-122e58b4f346",
+      "name": "HTTP Request",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "leadmakerAgency",
+          "mode": "list",
+          "cachedResultName": "leadmakerAgency",
+          "cachedResultUrl": "https://github.com/leadmakerAgency"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "splicepropertysolutions",
+          "mode": "list",
+          "cachedResultName": "splicepropertysolutions",
+          "cachedResultUrl": "https://github.com/leadmakerAgency/splicepropertysolutions"
+        },
+        "filePath": "=content/media/image-{{\n  $('Webhook').first().json.body.title\n    .toLowerCase()\n    .replaceSpecialChars()\n    .replace(/[^a-z0-9\\s-]/g, '')\n    .replace(/\\s+/g, '-')\n    .replace(/-+/g, '-')\n    .replace(/^-|-$/g, '')\n}}-{{ $execution.id }}.png",
+        "binaryData": true,
+        "commitMessage": "=Image for - {{ $('Webhook').first().json.body.title }}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [2848, 0],
+      "id": "e1793017-b4f6-494e-8f99-6cc0edd9fdf9",
+      "name": "Upload image",
+      "webhookId": "74e9b36e-d002-411a-80da-b903755828e7",
+      "credentials": {
+        "githubApi": {
+          "id": "oPh1BILDv4rasQFO",
+          "name": "leadmakerAgency github"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const titleRaw = $('Webhook').first().json.body.title || '';\nconst excerptRaw = $('Webhook').first().json.body.excerpt || '';\nconst bodyRaw = $('Webhook').first().json.body.body || '';\n\nconst uploaded = $('Upload image').first().json;\nconst uploadedPath = uploaded?.content?.path || '';\nconst uploadedName = uploaded?.content?.name || '';\n\nconst SITE_URL = 'https://www.splicepropertysolutions.co.uk';\n\nconst clean = (v = '') => String(v).replace(/[\\r\\n]+/g, ' ').trim();\nconst yamlSafe = (v = '') => JSON.stringify(clean(v));\n\nconst toSlug = (v = '') =>\n  clean(v)\n    .toLowerCase()\n    .replace(/[^a-z0-9]+/g, '-')\n    .replace(/^-+|-+$/g, '');\n\nconst title = clean(titleRaw);\nconst slug = toSlug(title);\nconst excerpt = clean(excerptRaw || bodyRaw).slice(0, 240);\nconst body = String(bodyRaw || '').trim();\n\nif (!title || !slug) {\n  throw new Error('Missing or unusable title in the incoming webhook body.');\n}\n\nconst articleUrl = `${SITE_URL}/blog/${slug}`;\n\nconst imageFilename = uploadedName || `image-${slug}.png`;\nconst featuredImage = uploadedPath\n  ? `/${uploadedPath.replace(/^\\/+/, '')}`\n  : `/media/${imageFilename}`;\n\nconst markdown = `---\nlayout: \"blog-post.njk\"\ntitle: ${yamlSafe(title)}\nslug: ${yamlSafe(slug)}\ndate: ${yamlSafe(new Date().toISOString())}\nexcerpt: ${yamlSafe(excerpt)}\nfeatured_image: ${yamlSafe(featuredImage)}\nhero_emoji: \"\"\npermalink: ${yamlSafe(`/blog/${slug}/`)}\n---\n\n${body}\n`;\n\nreturn [\n  {\n    json: {\n      title,\n      slug,\n      articleUrl,\n      imageFilename,\n      featuredImage,\n      postPath: `content/posts/${slug}.md`,\n      mediaPath: uploadedPath || `content/media/${imageFilename}`,\n      markdown\n    }\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3040, 0],
+      "id": "d27ca446-ca4b-417a-a6a4-d5314c96149d",
+      "name": "Normalize"
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "owner": {
+          "__rl": true,
+          "value": "leadmakerAgency",
+          "mode": "list",
+          "cachedResultName": "leadmakerAgency",
+          "cachedResultUrl": "https://github.com/leadmakerAgency"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "splicepropertysolutions",
+          "mode": "list",
+          "cachedResultName": "splicepropertysolutions",
+          "cachedResultUrl": "https://github.com/leadmakerAgency/splicepropertysolutions"
+        },
+        "filePath": "=content/posts/{{ $('Normalize').first().json.slug }}-{{ $execution.id }}.md",
+        "fileContent": "={{ $json.markdown }}\n\n\n",
+        "commitMessage": "={{ $('Webhook').first().json.body.title }}"
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [3232, 0],
+      "id": "1218124d-6052-4f0d-b04b-e35b6b693a70",
+      "name": "Create a file",
+      "webhookId": "a5752e24-7cbb-49c9-b02d-5a0219151791",
+      "credentials": {
+        "githubApi": {
+          "id": "oPh1BILDv4rasQFO",
+          "name": "leadmakerAgency github"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ 'Article': $('Normalize').first().json.title, 'Article URL': $('Normalize').first().json.articleUrl, 'Row Number': '', 'title': $('Normalize').first().json.title, 'url': $('Normalize').first().json.articleUrl, 'slug': $('Normalize').first().json.slug, 'commit_sha': $('Create a file').first().json.commit.sha, 'status': 'created' }) }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [3440, 0],
+      "id": "a1b2c3d4-0000-4a1a-9a1a-000000000000",
+      "name": "Respond to Zapier",
+      "notesInFlow": true,
+      "notes": "Returns THIS run's article title + URL to Zapier straight away. No Google Sheet lookup, so no stale row."
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://api.github.com/repos/leadmakerAgency/splicepropertysolutions/deployments?sha={{ $('Create a file').first().json.commit.sha }}&environment=Production&per_page=1",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Accept", "value": "application/vnd.github+json" },
+            { "name": "X-GitHub-Api-Version", "value": "2022-11-28" }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [3664, 0],
+      "id": "a1b2c3d4-1111-4a1a-9a1a-111111111111",
+      "name": "Get Deployment",
+      "alwaysOutputData": true,
+      "notesInFlow": true,
+      "notes": "Looks up the GitHub Deployment record that Vercel creates for this exact commit SHA.",
+      "credentials": {
+        "githubApi": {
+          "id": "oPh1BILDv4rasQFO",
+          "name": "leadmakerAgency github"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.id }}",
+              "rightValue": "",
+              "operator": { "type": "string", "operation": "notEmpty", "singleValue": true }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [3888, 0],
+      "id": "a1b2c3d4-2222-4a1a-9a1a-222222222222",
+      "name": "IF Deployment Found?"
+    },
+    {
+      "parameters": { "amount": 10 },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [3888, 240],
+      "id": "a1b2c3d4-3333-4a1a-9a1a-333333333333",
+      "name": "Wait A",
+      "webhookId": "b1111111-0000-4000-8000-000000000001"
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://api.github.com/repos/leadmakerAgency/splicepropertysolutions/deployments/{{ $json.id }}/statuses?per_page=1",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Accept", "value": "application/vnd.github+json" },
+            { "name": "X-GitHub-Api-Version", "value": "2022-11-28" }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [4112, 0],
+      "id": "a1b2c3d4-4444-4a1a-9a1a-444444444444",
+      "name": "Get Deployment Status",
+      "alwaysOutputData": true,
+      "notesInFlow": true,
+      "notes": "Checks whether the deployment has finished (success/inactive) or failed.",
+      "credentials": {
+        "githubApi": {
+          "id": "oPh1BILDv4rasQFO",
+          "name": "leadmakerAgency github"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.state }}",
+              "rightValue": "success",
+              "operator": { "type": "string", "operation": "equals" }
+            },
+            {
+              "id": "c2",
+              "leftValue": "={{ $json.state }}",
+              "rightValue": "inactive",
+              "operator": { "type": "string", "operation": "equals" }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [4336, 0],
+      "id": "a1b2c3d4-5555-4a1a-9a1a-555555555555",
+      "name": "IF Is Success?"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.state }}",
+              "rightValue": "failure",
+              "operator": { "type": "string", "operation": "equals" }
+            },
+            {
+              "id": "c2",
+              "leftValue": "={{ $json.state }}",
+              "rightValue": "error",
+              "operator": { "type": "string", "operation": "equals" }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [4336, 240],
+      "id": "a1b2c3d4-6666-4a1a-9a1a-666666666666",
+      "name": "IF Is Failed?"
+    },
+    {
+      "parameters": { "amount": 10 },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [4336, 480],
+      "id": "a1b2c3d4-7777-4a1a-9a1a-777777777777",
+      "name": "Wait C",
+      "webhookId": "b1111111-0000-4000-8000-000000000002"
+    },
+    {
+      "parameters": {
+        "errorMessage": "=Vercel deployment did not succeed for \"{{ $('Normalize').first().json.title }}\". Status: {{ $json.state }} - {{ $json.description }}"
+      },
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [4560, 300],
+      "id": "a1b2c3d4-8888-4a1a-9a1a-888888888888",
+      "name": "Stop And Error"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://hooks.leadmaker.agency/webhook/35716357-7325-4da3-ac46-ab23dda1f61c",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ event: 'blog.post.published', url: $('Normalize').first().json.articleUrl, title: $('Normalize').first().json.title, slug: $('Normalize').first().json.slug, source: 'splicepropertysolutions' }) }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [4560, 0],
+      "id": "a1b2c3d4-9999-4a1a-9a1a-999999999999",
+      "name": "Notify Leadmaker",
+      "notesInFlow": true,
+      "notes": "Sends the live article URL and title to the Leadmaker webhook, only after Vercel confirms the deployment succeeded."
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [[{ "node": "HTTP Request", "type": "main", "index": 0 }]]
+    },
+    "HTTP Request": {
+      "main": [[{ "node": "Upload image", "type": "main", "index": 0 }]]
+    },
+    "Upload image": {
+      "main": [[{ "node": "Normalize", "type": "main", "index": 0 }]]
+    },
+    "Normalize": {
+      "main": [[{ "node": "Create a file", "type": "main", "index": 0 }]]
+    },
+    "Create a file": {
+      "main": [[{ "node": "Respond to Zapier", "type": "main", "index": 0 }]]
+    },
+    "Respond to Zapier": {
+      "main": [[{ "node": "Get Deployment", "type": "main", "index": 0 }]]
+    },
+    "Get Deployment": {
+      "main": [[{ "node": "IF Deployment Found?", "type": "main", "index": 0 }]]
+    },
+    "IF Deployment Found?": {
+      "main": [
+        [{ "node": "Get Deployment Status", "type": "main", "index": 0 }],
+        [{ "node": "Wait A", "type": "main", "index": 0 }]
+      ]
+    },
+    "Wait A": {
+      "main": [[{ "node": "Get Deployment", "type": "main", "index": 0 }]]
+    },
+    "Get Deployment Status": {
+      "main": [[{ "node": "IF Is Success?", "type": "main", "index": 0 }]]
+    },
+    "IF Is Success?": {
+      "main": [
+        [{ "node": "Notify Leadmaker", "type": "main", "index": 0 }],
+        [{ "node": "IF Is Failed?", "type": "main", "index": 0 }]
+      ]
+    },
+    "IF Is Failed?": {
+      "main": [
+        [{ "node": "Stop And Error", "type": "main", "index": 0 }],
+        [{ "node": "Wait C", "type": "main", "index": 0 }]
+      ]
+    },
+    "Wait C": {
+      "main": [[{ "node": "Get Deployment Status", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "06c01549-c7ab-406a-92e8-72a39ce780c8",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "c76be5bd97b53082bf19401c73096209a3a77414e082f852b071572dfb2f534b"
+  },
+  "id": "tLftUs9Yo7KSuaUU",
+  "tags": []
+}

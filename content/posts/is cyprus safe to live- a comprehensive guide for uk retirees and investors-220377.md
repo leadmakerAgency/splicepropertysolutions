@@ -6,9 +6,6 @@ date: "2026-08-24T05:26:27.459Z"
 excerpt: "<p>Welcome to sunny Cyprus! If you're a UK resident considering a move to this beautiful island, you may have some questions about its safety. After all, relocating or investing in a new country can be a daunting prospect, especially when i"
 featured_image: "/content/media/image-is-cyprus-safe-to-live-a-comprehensive-guide-for-uk-retirees-and-investors-220377.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/is cyprus safe to live- a comprehensive guide for uk retirees and investors/"
 ---
 

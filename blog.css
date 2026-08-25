@@ -329,26 +329,6 @@ html, body { margin: 0; padding: 0; }
   display: block;
 }
 
-.post-tags {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.post-tag {
-  background: rgba(201,162,75,.18);
-  color: var(--gold-light);
-  font-family: 'Jost', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 3px 10px;
-  border-radius: 4px;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-}
-
 .post-hero h1 {
   font-family: 'Marcellus', serif;
   color: var(--white);

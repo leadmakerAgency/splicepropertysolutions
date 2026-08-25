@@ -22,5 +22,4 @@ collections:
       - { label: Excerpt,        name: excerpt,        widget: text,    required: false }
       - { label: Featured Image, name: featured_image, widget: image,   required: false }
       - { label: Hero Emoji,     name: hero_emoji,     widget: string,  required: false, default: "🏡" }
-      - { label: Tags,           name: tags,           widget: list,    required: false }
       - { label: Body,           name: body,           widget: markdown }

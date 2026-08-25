@@ -6,9 +6,6 @@ date: "2026-08-24T15:04:44.117Z"
 excerpt: "<p>Welcome to sunny Cyprus, where the Mediterranean lifestyle and beautiful beaches await you. If you're considering relocating or investing in this stunning island, it's important to understand the local customs and working week. In this e"
 featured_image: "/content/media/image-your-essential-guide-to-cyprus-public-holidays-and-working-week-for-relocation-and-investment-220392.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/your essential guide to cyprus public holidays and working week for relocation and investment/"
 ---
 

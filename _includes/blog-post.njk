@@ -7,16 +7,6 @@
     <span class="post-hero-emoji">{{ hero_emoji }}</span>
     {% endif %}
 
-    {% if tags and tags | length %}
-    <div class="post-tags">
-      {% for tag in tags %}
-        {% if tag != "posts" %}
-        <span class="post-tag">{{ tag }}</span>
-        {% endif %}
-      {% endfor %}
-    </div>
-    {% endif %}
-
     <h1>{{ title }}</h1>
 
     <div class="post-meta">
@@ -38,7 +28,7 @@
       {{ content | safe }}
     </article>
 
-    {% set related = collections.posts | relatedPosts(page.url, tags, 3) %}
+    {% set related = collections.posts | relatedPosts(page.url, 3) %}
     {% if related and related | length %}
     <div class="related-posts">
       <h3>You might also like</h3>
