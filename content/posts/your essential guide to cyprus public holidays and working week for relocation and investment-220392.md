@@ -1,15 +1,13 @@
 ---
-layout: "blog-post.njk"
-title: "Your Essential Guide to Cyprus Public Holidays and Working Week for Relocation and Investment"
-slug: "your essential guide to cyprus public holidays and working week for relocation and investment"
-date: "2026-08-24T15:04:44.117Z"
-excerpt: "<p>Welcome to sunny Cyprus, where the Mediterranean lifestyle and beautiful beaches await you. If you're considering relocating or investing in this stunning island, it's important to understand the local customs and working week. In this e"
-featured_image: "/content/media/image-your-essential-guide-to-cyprus-public-holidays-and-working-week-for-relocation-and-investment-220392.png"
-hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
-permalink: "/blog/your essential guide to cyprus public holidays and working week for relocation and investment/"
+title: Your Essential Guide to Cyprus Public Holidays and Working Week for Relocation and Investment
+slug: your essential guide to cyprus public holidays and working week for relocation and investment
+date: 2026-08-24T15:04:44.117Z
+draft: false
+excerpt: <p>Welcome to sunny Cyprus, where the Mediterranean lifestyle and beautiful beaches await you. If you're considering relocating or investing in this stunning island, it's important to understand the local customs and working week. In this e
+featured_image: /content/media/image-your-essential-guide-to-cyprus-public-holidays-and-working-week-for-relocation-and-investment-220392.png
+hero_emoji: ''
+layout: blog-post.njk
+permalink: /blog/your essential guide to cyprus public holidays and working week for relocation and investment/
 ---
 
 <p>Welcome to sunny Cyprus, where the Mediterranean lifestyle and beautiful beaches await you. If you're considering relocating or investing in this stunning island, it's important to understand the local customs and working week. In this essential guide, we'll break down everything you need to know about Cyprus public holidays and the working week, so you can plan your move or investment with confidence.</p>
@@ -51,6 +49,3 @@ permalink: "/blog/your essential guide to cyprus public holidays and working wee
 <p><em>This article is for general informational purposes only and does not constitute property, financial, legal, or tax advice. Details, costs and availability vary, are subject to individual circumstances, and change over time. Nothing here is a guarantee. Please speak to a suitably qualified professional about your situation.</em></p>
 <p><em>Any references to tax treatment are general in nature. Tax laws change and apply differently to each person. Please consult a qualified tax professional.</em></p>
 <p><em>This is general information, not financial or investment advice. Property values and rental income can fall as well as rise. Please consult a suitably qualified adviser about your circumstances.</em></p>
-
-
-
