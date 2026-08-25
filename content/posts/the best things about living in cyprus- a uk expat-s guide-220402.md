@@ -1,15 +1,13 @@
 ---
-layout: "blog-post.njk"
 title: "The Best Things About Living in Cyprus: A UK Expat's Guide"
-slug: "the best things about living in cyprus- a uk expat-s guide"
-date: "2026-08-24T15:54:50.221Z"
-excerpt: "<p>Welcome to the beautiful island of Cyprus! As a UK expat who has made the move to this Mediterranean gem, I am excited to share with you the best things about living in Cyprus. Whether you are considering moving, investing, or retiring h"
-featured_image: "/content/media/image-the-best-things-about-living-in-cyprus-a-uk-expats-guide-220402.png"
-hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
-permalink: "/blog/the best things about living in cyprus- a uk expat-s guide/"
+slug: the best things about living in cyprus- a uk expat-s guide
+date: 2026-08-24T15:54:50.221Z
+draft: false
+excerpt: <p>Welcome to the beautiful island of Cyprus! As a UK expat who has made the move to this Mediterranean gem, I am excited to share with you the best things about living in Cyprus. Whether you are considering moving, investing, or retiring h
+featured_image: /content/media/image-the-best-things-about-living-in-cyprus-a-uk-expats-guide-220402.png
+hero_emoji: ''
+layout: blog-post.njk
+permalink: /blog/the best things about living in cyprus- a uk expat-s guide/
 ---
 
 <p>Welcome to the beautiful island of Cyprus! As a UK expat who has made the move to this Mediterranean gem, I am excited to share with you the best things about living in Cyprus. Whether you are considering moving, investing, or retiring here, I hope this guide will give you a taste of what life in Cyprus has to offer.</p>
@@ -45,6 +43,3 @@ permalink: "/blog/the best things about living in cyprus- a uk expat-s guide/"
 <p><em>This article is for general informational purposes only and does not constitute property, financial, legal, or tax advice. Details, costs and availability vary, are subject to individual circumstances, and change over time. Nothing here is a guarantee. Please speak to a suitably qualified professional about your situation.</em></p>
 <p><em>Any references to tax treatment are general in nature. Tax laws change and apply differently to each person. Please consult a qualified tax professional.</em></p>
 <p><em>This is general information, not financial or investment advice. Property values and rental income can fall as well as rise. Please consult a suitably qualified adviser about your circumstances.</em></p>
-
-
-
