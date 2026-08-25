@@ -1,15 +1,13 @@
 ---
-layout: "blog-post.njk"
-title: "Understanding Cyprus VAT on Property: A Guide for UK Investors and Retirees"
-slug: "understanding-cyprus-vat-on-property-a-guide-for-uk-investors-and-retirees"
-date: "2026-08-24T17:50:59.677Z"
-excerpt: "<p>Welcome to Cyprus, a beautiful island in the Mediterranean that offers a unique blend of stunning beaches, rich history, and a relaxed Mediterranean lifestyle. If you are considering moving to, investing in, or retiring in Cyprus, unders"
-featured_image: "/content/media/image-understanding-cyprus-vat-on-property-a-guide-for-uk-investors-and-retirees-220428.png"
-hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
-permalink: "/blog/understanding-cyprus-vat-on-property-a-guide-for-uk-investors-and-retirees/"
+title: 'Understanding Cyprus VAT on Property: A Guide for UK Investors and Retirees'
+slug: understanding-cyprus-vat-on-property-a-guide-for-uk-investors-and-retirees
+date: 2026-08-24T17:50:59.677Z
+draft: false
+excerpt: <p>Welcome to Cyprus, a beautiful island in the Mediterranean that offers a unique blend of stunning beaches, rich history, and a relaxed Mediterranean lifestyle. If you are considering moving to, investing in, or retiring in Cyprus, unders
+featured_image: /content/media/image-understanding-cyprus-vat-on-property-a-guide-for-uk-investors-and-retirees-220428.png
+hero_emoji: ''
+layout: blog-post.njk
+permalink: /blog/understanding-cyprus-vat-on-property-a-guide-for-uk-investors-and-retirees/
 ---
 
 <p>Welcome to Cyprus, a beautiful island in the Mediterranean that offers a unique blend of stunning beaches, rich history, and a relaxed Mediterranean lifestyle. If you are considering moving to, investing in, or retiring in Cyprus, understanding the country's VAT on property is crucial. This guide will provide you with all the necessary information you need to know about Cyprus VAT on property as a UK investor or retiree.</p>
@@ -49,6 +47,3 @@ permalink: "/blog/understanding-cyprus-vat-on-property-a-guide-for-uk-investors-
 <p><em>This article is for general informational purposes only and does not constitute property, financial, legal, or tax advice. Details, costs and availability vary, are subject to individual circumstances, and change over time. Nothing here is a guarantee. Please speak to a suitably qualified professional about your situation.</em></p>
 <p><em>Any references to tax treatment are general in nature. Tax laws change and apply differently to each person. Please consult a qualified tax professional.</em></p>
 <p><em>This is general information, not financial or investment advice. Property values and rental income can fall as well as rise. Please consult a suitably qualified adviser about your circumstances.</em></p>
-
-
-
