@@ -1,7 +1,7 @@
 /**
  * Splice Property Solutions — head loader (runs synchronously in <head>).
  * - Google Fonts: loaded only with functional cookie consent.
- * - Google Analytics (G-680ZRPQYLW): gtag.js loads on every page; Consent Mode v2
+ * - Google Analytics (G-680ZRPQYLW): gtag.js is in the page <head>; Consent Mode v2
  *   controls whether analytics data is collected until the visitor accepts analytics cookies.
  */
 (function () {
@@ -9,7 +9,6 @@
   var GA_ID = "G-680ZRPQYLW";
   var FONT_URL =
     "https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap";
-  var analyticsInitialized = false;
 
   function readConsent() {
     try {
@@ -25,36 +24,18 @@
     return !!(consent && consent.analytics);
   }
 
-  function initGoogleAnalytics() {
-    if (analyticsInitialized) return;
-    analyticsInitialized = true;
-
+  function ensureGtag() {
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
+    if (typeof window.gtag !== "function") {
+      window.gtag = function gtag() {
+        window.dataLayer.push(arguments);
+      };
     }
-    window.gtag = gtag;
-
-    gtag("consent", "default", {
-      ad_storage: "denied",
-      analytics_storage: hasAnalyticsConsent() ? "granted" : "denied",
-      wait_for_update: 500,
-    });
-
-    gtag("js", new Date());
-    gtag("config", GA_ID);
-
-    var script = document.createElement("script");
-    script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
-    document.head.appendChild(script);
+    return window.gtag;
   }
 
   function setAnalyticsConsent(granted) {
-    if (!analyticsInitialized) {
-      initGoogleAnalytics();
-    }
-    window.gtag("consent", "update", {
+    ensureGtag()("consent", "update", {
       analytics_storage: granted ? "granted" : "denied",
     });
   }
@@ -86,14 +67,15 @@
     document.documentElement.classList.add("fonts-fallback");
   }
 
-  initGoogleAnalytics();
+  if (hasAnalyticsConsent()) {
+    setAnalyticsConsent(true);
+  }
 
   window.SPSConsent = {
     STORAGE_KEY: STORAGE_KEY,
     FONT_URL: FONT_URL,
     GA_ID: GA_ID,
     loadFonts: loadFonts,
-    initGoogleAnalytics: initGoogleAnalytics,
     setAnalyticsConsent: setAnalyticsConsent,
     readConsent: readConsent,
     applyConsent: function (prefs) {
