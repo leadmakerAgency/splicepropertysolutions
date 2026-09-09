@@ -1,12 +1,9 @@
 /**
  * Splice Property Solutions — head loader (runs synchronously in <head>).
  * - Google Fonts: loaded only with functional cookie consent.
- * - Google Analytics (G-680ZRPQYLW): gtag.js is in the page <head>; Consent Mode v2
- *   controls whether analytics data is collected until the visitor accepts analytics cookies.
  */
 (function () {
   var STORAGE_KEY = "sps_cookie_consent";
-  var GA_ID = "G-680ZRPQYLW";
   var FONT_URL =
     "https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap";
 
@@ -17,27 +14,6 @@
     } catch (e) {
       return null;
     }
-  }
-
-  function hasAnalyticsConsent() {
-    var consent = readConsent();
-    return !!(consent && consent.analytics);
-  }
-
-  function ensureGtag() {
-    window.dataLayer = window.dataLayer || [];
-    if (typeof window.gtag !== "function") {
-      window.gtag = function gtag() {
-        window.dataLayer.push(arguments);
-      };
-    }
-    return window.gtag;
-  }
-
-  function setAnalyticsConsent(granted) {
-    ensureGtag()("consent", "update", {
-      analytics_storage: granted ? "granted" : "denied",
-    });
   }
 
   function loadFonts() {
@@ -67,16 +43,10 @@
     document.documentElement.classList.add("fonts-fallback");
   }
 
-  if (hasAnalyticsConsent()) {
-    setAnalyticsConsent(true);
-  }
-
   window.SPSConsent = {
     STORAGE_KEY: STORAGE_KEY,
     FONT_URL: FONT_URL,
-    GA_ID: GA_ID,
     loadFonts: loadFonts,
-    setAnalyticsConsent: setAnalyticsConsent,
     readConsent: readConsent,
     applyConsent: function (prefs) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs));
@@ -89,7 +59,6 @@
           el.remove();
         });
       }
-      setAnalyticsConsent(!!prefs.analytics);
     },
   };
 })();
