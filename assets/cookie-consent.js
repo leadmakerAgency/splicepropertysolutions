@@ -29,14 +29,18 @@
     banner.setAttribute("aria-describedby", "sps-cookie-desc");
     banner.innerHTML =
       '<div class="sps-cookie-inner">' +
+      '<div class="sps-cookie-copy">' +
       '<h2 id="sps-cookie-title">We use cookies</h2>' +
       '<p id="sps-cookie-desc">We use essential cookies to remember your choices. With your permission, we also load fonts from Google and use Google Analytics to understand how visitors use the site. <a href="/cookie-policy.html">Cookie Policy</a> · <a href="/privacy-policy.html">Privacy</a></p>' +
+      "</div>" +
+      '<div class="sps-cookie-controls">' +
       '<div class="sps-cookie-actions sps-cookie-actions--primary">' +
       '<button type="button" class="sps-cookie-btn sps-cookie-btn-accept" data-action="accept-all">Accept all</button>' +
       '<button type="button" class="sps-cookie-btn sps-cookie-btn-reject" data-action="reject-all">Reject</button>' +
       '</div>' +
       '<div class="sps-cookie-actions">' +
       '<button type="button" class="sps-cookie-btn sps-cookie-btn-settings" data-action="toggle-prefs">Manage preferences</button>' +
+      "</div>" +
       "</div>" +
       '<div id="sps-cookie-preferences" hidden>' +
       '<div class="sps-cookie-category">' +

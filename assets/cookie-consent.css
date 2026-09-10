@@ -12,29 +12,24 @@ html.fonts-fallback .serif-lead {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* Cookie consent — compact bottom-right card */
+/* Cookie consent — full-width bottom bar */
 #sps-cookie-banner {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  left: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 10000;
-  width: min(360px, calc(100vw - 32px));
-  max-height: calc(100vh - 40px);
+  width: 100%;
+  max-height: min(80vh, calc(100vh - 16px));
   overflow: auto;
   background: #0d2237;
   color: #e8eaee;
-  border: 1px solid rgba(201, 162, 75, 0.35);
-  border-radius: 8px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.32);
+  border-top: 1px solid rgba(201, 162, 75, 0.35);
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.28);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   font-size: 13px;
   line-height: 1.5;
   animation: sps-cookie-in 0.35s ease-out;
-}
-
-#sps-cookie-banner.sps-cookie-banner--expanded {
-  width: min(400px, calc(100vw - 32px));
 }
 
 #sps-cookie-banner[hidden] {
@@ -53,7 +48,25 @@ html.fonts-fallback .serif-lead {
 }
 
 .sps-cookie-inner {
-  padding: 18px 18px 16px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px 24px 18px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px 32px;
+  align-items: center;
+}
+
+.sps-cookie-copy {
+  min-width: 0;
+}
+
+.sps-cookie-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  min-width: 260px;
 }
 
 .sps-cookie-inner h2 {
@@ -65,8 +78,8 @@ html.fonts-fallback .serif-lead {
   line-height: 1.25;
 }
 
-.sps-cookie-inner > p {
-  margin: 0 0 14px;
+.sps-cookie-inner p {
+  margin: 0;
   color: #b8c0c9;
   font-size: 12px;
   line-height: 1.55;
@@ -152,7 +165,8 @@ html.fonts-fallback .serif-lead {
 
 /* Preferences panel */
 #sps-cookie-preferences {
-  margin-top: 14px;
+  grid-column: 1 / -1;
+  margin-top: 4px;
   padding-top: 14px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -247,20 +261,14 @@ footer .sps-cookie-settings-link {
   color: #e0c07f;
 }
 
-@media (max-width: 480px) {
-  #sps-cookie-banner {
-    bottom: 12px;
-    right: 12px;
-    left: 12px;
-    width: auto;
-  }
-
-  #sps-cookie-banner.sps-cookie-banner--expanded {
-    width: auto;
-  }
-
+@media (max-width: 720px) {
   .sps-cookie-inner {
-    padding: 16px;
+    grid-template-columns: 1fr;
+    padding: 16px 16px 18px;
+  }
+
+  .sps-cookie-controls {
+    min-width: 0;
   }
 
   .sps-cookie-actions--primary {
