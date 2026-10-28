@@ -6,9 +6,6 @@ date: "2026-09-14T20:01:42.059Z"
 excerpt: "<p>Welcome to Cyprus, a beautiful and welcoming island located in the Mediterranean Sea. If you are considering relocating to Cyprus with your family, you have come to the right place. This complete guide will provide you with all the infor"
 featured_image: "/content/media/image-how-to-relocate-to-cyprus-with-your-family-a-complete-guide-220799.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/how-to-relocate-to-cyprus-with-your-family-a-complete-guide/"
 ---
 

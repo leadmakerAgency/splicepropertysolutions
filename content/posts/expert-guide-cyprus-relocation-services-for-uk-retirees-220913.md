@@ -6,9 +6,6 @@ date: "2026-09-21T20:02:46.139Z"
 excerpt: "<p>Welcome to Cyprus, one of the most popular destinations for UK retirees looking to relocate or invest in property abroad. With its stunning beaches, warm climate, and welcoming local community, it's no wonder that so many Brits are drawn"
 featured_image: "/content/media/image-expert-guide-cyprus-relocation-services-for-uk-retirees-220913.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/expert-guide-cyprus-relocation-services-for-uk-retirees/"
 ---
 

@@ -6,9 +6,6 @@ date: "2026-09-23T20:02:23.263Z"
 excerpt: "<p>Are you considering retiring or investing in Cyprus? With its warm climate, stunning beaches, and affordable cost of living, it's no wonder that Cyprus is a popular destination for UK residents. But before you make the move, it's importa"
 featured_image: "/content/media/image-discover-the-best-deals-on-cyprus-property-prices-for-retirement-and-investment-220973.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/discover-the-best-deals-on-cyprus-property-prices-for-retirement-and-investment/"
 ---
 

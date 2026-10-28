@@ -6,9 +6,6 @@ date: "2026-09-06T20:02:45.954Z"
 excerpt: "<p>Are you a UK resident looking to retire in a warm and welcoming country? Cyprus may just be the perfect destination for you. With its beautiful beaches, rich history, and affordable cost of living, it's no wonder many UK retirees are cho"
 featured_image: "/content/media/image-retiring-to-cyprus-the-ultimate-guide-for-uk-residents-220645.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/retiring-to-cyprus-the-ultimate-guide-for-uk-residents/"
 ---
 

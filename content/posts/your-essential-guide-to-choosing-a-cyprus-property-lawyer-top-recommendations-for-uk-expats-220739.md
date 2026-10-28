@@ -6,9 +6,6 @@ date: "2026-09-10T20:02:02.981Z"
 excerpt: "<p>If you're considering moving to, investing in, or retiring in Cyprus, one of the most important steps is finding a reputable property lawyer to guide you through the process. As a UK expat, you may be unfamiliar with the legalities and p"
 featured_image: "/content/media/image-your-essential-guide-to-choosing-a-cyprus-property-lawyer-top-recommendations-for-uk-expats-220739.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/your-essential-guide-to-choosing-a-cyprus-property-lawyer-top-recommendations-for-uk-expats/"
 ---
 

@@ -6,9 +6,6 @@ date: "2026-09-07T20:02:42.319Z"
 excerpt: "<p>Welcome to sunny Cyprus, where the sparkling blue waters and warm Mediterranean climate draw in thousands of visitors each year. If you're considering making the move to this beautiful island, you may be wondering about the cost of priva"
 featured_image: "/content/media/image-the-cost-of-private-school-in-cyprus-a-guide-for-uk-residents-220667.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/the-cost-of-private-school-in-cyprus-a-guide-for-uk-residents/"
 ---
 

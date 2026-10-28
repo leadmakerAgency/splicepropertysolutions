@@ -6,9 +6,6 @@ date: "2026-09-03T20:03:29.674Z"
 excerpt: "<p> If you're considering retiring in Cyprus, one of the first things you'll want to know about is the pension tax rate. As a popular destination for retirees, Cyprus offers a favorable tax rate of 5 percent on pension income. But what does"
 featured_image: "/content/media/image-maximizing-your-retirement-income-understanding-cyprus-pension-tax-at-5-percent-220588.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/maximizing-your-retirement-income-understanding-cyprus-pension-tax-at-5-percent/"
 ---
 

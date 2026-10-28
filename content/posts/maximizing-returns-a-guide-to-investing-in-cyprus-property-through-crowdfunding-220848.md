@@ -6,9 +6,6 @@ date: "2026-09-17T20:02:02.726Z"
 excerpt: "<p>Are you considering investing in property in Cyprus but not sure where to start? Have you heard about crowdfunding as a way to invest in real estate but not sure how it works? Look no further, as we guide you through the world of Cyprus"
 featured_image: "/content/media/image-maximizing-returns-a-guide-to-investing-in-cyprus-property-through-crowdfunding-220848.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/maximizing-returns-a-guide-to-investing-in-cyprus-property-through-crowdfunding/"
 ---
 

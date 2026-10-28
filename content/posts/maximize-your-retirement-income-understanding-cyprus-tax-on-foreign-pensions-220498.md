@@ -6,9 +6,6 @@ date: "2026-08-28T20:03:09.846Z"
 excerpt: "<p>Welcome to Cyprus, where the sun always shines and the retirement lifestyle is idyllic. As you consider making the move to this beautiful island, it's important to understand the tax implications on your foreign pension. Here, we break d"
 featured_image: "/content/media/image-maximize-your-retirement-income-understanding-cyprus-tax-on-foreign-pensions-220498.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/maximize-your-retirement-income-understanding-cyprus-tax-on-foreign-pensions/"
 ---
 

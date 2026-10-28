@@ -6,9 +6,6 @@ date: "2026-09-19T20:02:09.152Z"
 excerpt: "<p><em>This article is for general informational purposes only and does not constitute property, financial, legal, or tax advice. Details, costs and availability vary, are subject to individual circumstances, and change over time. Nothing h"
 featured_image: "/content/media/image-trusted-property-lawyers-in-cyprus-your-guide-to-safe-and-secure-investments-220878.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/trusted-property-lawyers-in-cyprus-your-guide-to-safe-and-secure-investments/"
 ---
 

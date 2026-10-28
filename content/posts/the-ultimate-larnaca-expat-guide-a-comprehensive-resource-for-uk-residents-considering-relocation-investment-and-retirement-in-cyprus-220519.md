@@ -6,9 +6,6 @@ date: "2026-08-31T06:26:01.964Z"
 excerpt: "<p>Welcome to the Ultimate Larnaca Expat Guide, your comprehensive resource for UK residents considering relocation, investment, and retirement in Cyprus. As someone researching this from abroad, you may have questions about what it's reall"
 featured_image: "/content/media/image-the-ultimate-larnaca-expat-guide-a-comprehensive-resource-for-uk-residents-considering-relocation-investment-and-retirement-in-cyprus-220519.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/the-ultimate-larnaca-expat-guide-a-comprehensive-resource-for-uk-residents-considering-relocation-investment-and-retirement-in-cyprus/"
 ---
 

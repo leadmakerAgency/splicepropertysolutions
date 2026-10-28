@@ -6,9 +6,6 @@ date: "2026-08-29T20:02:56.621Z"
 excerpt: "<p>Are you a UK expat considering a move to sunny Cyprus? With its beautiful beaches, warm climate, and laid-back lifestyle, it's no wonder that many Brits are drawn to this Mediterranean island. And with the rise of remote work, it's now e"
 featured_image: "/content/media/image-working-remotely-from-cyprus-the-ultimate-guide-for-uk-expats-220507.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/working-remotely-from-cyprus-the-ultimate-guide-for-uk-expats/"
 ---
 

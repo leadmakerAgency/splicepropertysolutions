@@ -6,9 +6,6 @@ date: "2026-09-16T20:02:23.809Z"
 excerpt: "<p>Welcome to Cyprus, where the sun is always shining and the food is always delicious. If you're considering a move to this beautiful island, one of the things you may be wondering about is the cost of eating out. As a UK expat, you may be"
 featured_image: "/content/media/image-discover-the-real-cost-of-eating-out-in-cyprus-for-uk-expats-220833.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/discover-the-real-cost-of-eating-out-in-cyprus-for-uk-expats/"
 ---
 

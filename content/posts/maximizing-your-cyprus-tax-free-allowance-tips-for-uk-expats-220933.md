@@ -6,9 +6,6 @@ date: "2026-09-22T20:03:28.918Z"
 excerpt: "<p>Welcome to Cyprus, a beautiful island nation located in the Eastern Mediterranean. If you're a UK expat considering a move to Cyprus, you may be wondering about the tax implications. Luckily, Cyprus offers a generous tax-free allowance f"
 featured_image: "/content/media/image-maximizing-your-cyprus-tax-free-allowance-tips-for-uk-expats-220933.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/maximizing-your-cyprus-tax-free-allowance-tips-for-uk-expats/"
 ---
 

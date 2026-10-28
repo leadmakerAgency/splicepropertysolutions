@@ -6,9 +6,6 @@ date: "2026-08-27T20:02:43.756Z"
 excerpt: "<p>Welcome to sunny Cyprus, a popular destination for those looking to retire, invest or relocate from the UK. As you start planning your move, it's important to understand the tax implications of renting out your UK property while living i"
 featured_image: "/content/media/image-maximising-your-uk-rental-income-in-cyprus-understanding-tax-implications-220487.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/maximising-your-uk-rental-income-in-cyprus-understanding-tax-implications/"
 ---
 

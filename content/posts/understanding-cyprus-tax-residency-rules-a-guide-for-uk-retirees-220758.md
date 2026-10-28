@@ -6,9 +6,6 @@ date: "2026-09-11T20:02:15.762Z"
 excerpt: "<p>Welcome to sunny Cyprus! If you're a UK retiree considering a move to this beautiful island, you may have questions about tax residency rules. Understanding these rules is essential for making informed decisions about your move and poten"
 featured_image: "/content/media/image-understanding-cyprus-tax-residency-rules-a-guide-for-uk-retirees-220758.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/understanding-cyprus-tax-residency-rules-a-guide-for-uk-retirees/"
 ---
 

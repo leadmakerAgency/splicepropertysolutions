@@ -6,9 +6,6 @@ date: "2026-09-15T20:01:56.295Z"
 excerpt: "<p>Welcome to Cyprus, where the sun shines all year round and the beautiful Mediterranean Sea beckons. If you are a UK investor considering property in Cyprus, you have come to the right place. As experts in the Cyprus property market, Spli"
 featured_image: "/content/media/image-your-complete-guide-to-independent-property-advice-in-cyprus-for-uk-investors-220815.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/your-complete-guide-to-independent-property-advice-in-cyprus-for-uk-investors/"
 ---
 

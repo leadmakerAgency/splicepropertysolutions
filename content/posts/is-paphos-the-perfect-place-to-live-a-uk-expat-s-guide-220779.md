@@ -6,9 +6,6 @@ date: "2026-09-13T20:02:32.955Z"
 excerpt: "<p> Moving to a new country can be an exciting yet daunting prospect, especially for UK expats looking to relocate to Cyprus. With its beautiful beaches, warm weather, and relaxed lifestyle, it's no wonder that many consider Paphos as the p"
 featured_image: "/content/media/image-is-paphos-the-perfect-place-to-live-a-uk-expats-guide-220779.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/is-paphos-the-perfect-place-to-live-a-uk-expat-s-guide/"
 ---
 

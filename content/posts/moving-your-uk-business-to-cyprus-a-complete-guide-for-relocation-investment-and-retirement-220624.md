@@ -6,9 +6,6 @@ date: "2026-09-05T20:02:11.871Z"
 excerpt: "<p>Are you considering moving your UK business to Cyprus? You're not alone. Many people are drawn to the beautiful Mediterranean island for its warm climate, low cost of living, and favorable tax system. But before you make the move, there"
 featured_image: "/content/media/image-moving-your-uk-business-to-cyprus-a-complete-guide-for-relocation-investment-and-retirement-220624.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/moving-your-uk-business-to-cyprus-a-complete-guide-for-relocation-investment-and-retirement/"
 ---
 

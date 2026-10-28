@@ -6,9 +6,6 @@ date: "2026-09-08T20:01:52.504Z"
 excerpt: "Private Healthcare Costs in Cyprus: A Guide for UK Residents If you're considering a move to Cyprus, one of the important factors to consider is healthcare. As a UK resident, you may be used to the National Health Service (NHS) providing fr"
 featured_image: "/content/media/image-private-healthcare-costs-in-cyprus-a-guide-for-uk-residents-220691.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/private-healthcare-costs-in-cyprus-a-guide-for-uk-residents/"
 ---
 

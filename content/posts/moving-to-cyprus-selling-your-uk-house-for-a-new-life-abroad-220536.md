@@ -6,9 +6,6 @@ date: "2026-08-31T20:02:49.967Z"
 excerpt: "<p>Welcome to Cyprus, a beautiful island destination that has captured the hearts of many expats looking for a new life abroad. If you're considering making the move from the UK to Cyprus, you're not alone. Many are drawn to the island's wa"
 featured_image: "/content/media/image-moving-to-cyprus-selling-your-uk-house-for-a-new-life-abroad-220536.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/moving-to-cyprus-selling-your-uk-house-for-a-new-life-abroad/"
 ---
 

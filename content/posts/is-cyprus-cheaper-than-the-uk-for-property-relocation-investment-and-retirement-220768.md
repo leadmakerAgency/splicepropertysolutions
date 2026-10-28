@@ -6,9 +6,6 @@ date: "2026-09-12T20:02:18.728Z"
 excerpt: "<p>If you're considering a move to Cyprus, one of the first questions that may come to mind is whether it is cheaper than the UK. With its warm climate, beautiful beaches, and lower cost of living, it's no wonder that many people are lookin"
 featured_image: "/content/media/image-is-cyprus-cheaper-than-the-uk-for-property-relocation-investment-and-retirement-220768.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/is-cyprus-cheaper-than-the-uk-for-property-relocation-investment-and-retirement/"
 ---
 

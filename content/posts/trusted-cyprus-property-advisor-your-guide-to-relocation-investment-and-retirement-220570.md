@@ -6,9 +6,6 @@ date: "2026-09-02T20:03:00.968Z"
 excerpt: "<p>Welcome to Cyprus, the beautiful island country in the eastern Mediterranean known for its warm climate, stunning beaches, and rich culture. If you are considering relocating, investing, or retiring in Cyprus, you have come to the right"
 featured_image: "/content/media/image-trusted-cyprus-property-advisor-your-guide-to-relocation-investment-and-retirement-220570.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/trusted-cyprus-property-advisor-your-guide-to-relocation-investment-and-retirement/"
 ---
 

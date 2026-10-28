@@ -6,9 +6,6 @@ date: "2026-09-01T20:02:43.431Z"
 excerpt: "<p> Moving to a new country for work can be an exciting and daunting experience, especially when it involves relocating to a beautiful island like Cyprus. As a UK expat, there are many things to consider before making the move, from finding"
 featured_image: "/content/media/image-moving-to-cyprus-for-work-a-guide-for-uk-expats-220552.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/moving-to-cyprus-for-work-a-guide-for-uk-expats/"
 ---
 

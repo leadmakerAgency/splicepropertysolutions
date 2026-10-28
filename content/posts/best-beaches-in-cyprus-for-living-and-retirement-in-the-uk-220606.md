@@ -6,9 +6,6 @@ date: "2026-09-04T20:02:56.708Z"
 excerpt: "<p>Cyprus is a popular destination for UK residents looking to move, invest, or retire abroad. And it's no surprise why - with its beautiful beaches, warm climate, and laid-back lifestyle, Cyprus has a lot to offer. But with so many beaches"
 featured_image: "/content/media/image-best-beaches-in-cyprus-for-living-and-retirement-in-the-uk-220606.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/best-beaches-in-cyprus-for-living-and-retirement-in-the-uk/"
 ---
 

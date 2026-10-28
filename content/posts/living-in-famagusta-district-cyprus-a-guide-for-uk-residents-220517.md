@@ -6,9 +6,6 @@ date: "2026-08-30T20:02:56.829Z"
 excerpt: "<p>Welcome to Famagusta District, Cyprus – a beautiful and diverse region known for its warm climate, stunning beaches, and rich history. If you are a UK resident considering a move to Cyprus, you have come to the right place. In this guide"
 featured_image: "/content/media/image-living-in-famagusta-district-cyprus-a-guide-for-uk-residents-220517.png"
 hero_emoji: ""
-tags:
-  - "airbnb"
-  - "cambridge"
 permalink: "/blog/living-in-famagusta-district-cyprus-a-guide-for-uk-residents/"
 ---
 
