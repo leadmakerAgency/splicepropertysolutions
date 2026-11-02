@@ -214,16 +214,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     var lf=document.getElementById('f-lang'); if(lf) lf.value=lang;
 
     var form=document.getElementById('leadform');
-    if(form) form.addEventListener('submit',function(){
+    if(form) form.addEventListener('submit',function(e){
+      e.preventDefault();
       try{
         var fd=new FormData(form);
         var data={};
         fd.forEach(function(v,k){ if(k!=='_gotcha'&&k!=='_subject'&&k!=='_next') data[k]=v; });
-        navigator.sendBeacon(
-          'https://hooks.leadmaker.agency/webhook/3ad19d26-70ba-4574-bb30-a12031c6eb17',
-          new Blob([JSON.stringify(data)],{type:'application/json'})
-        );
-      }catch(e){}
+        fetch('https://hooks.leadmaker.agency/webhook/3ad19d26-70ba-4574-bb30-a12031c6eb17',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify(data),
+          keepalive:true
+        }).catch(function(){});
+      }catch(ex){}
+      form.submit();
     });
   })();
 </script>
